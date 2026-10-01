@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Sudoku</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2280%22>❄️</text></svg>">
+    <link rel="stylesheet" href="style.css" />
+    <!-- Confetti library for win screen-->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <h1>❄️ Mini Sudoku ❄️</h1>
+            <div class="stats-bar">
+                <div class="timer" id="timer-display"> 00:00</div>
+                <button id="new-game-btn" class="btn primary-btn">New Game</button>
+            </div>
+        </header>
+
+        <!-- Controls Bar-->
+        <div class="controls-bar">
+            <div class="toggle-group">
+                <button id="mode-toggle" class="btn toggle-btn">Mode: ❄️ Emoji</button>
+            </div>
+            <div class="select-group">
+                <label for="difficulty-select">Diff:</label>
+                <select id="difficulty-select">
+                    <option value="easy">Easy</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Sudoku Board (JS will generate the 16 cells)-->
+        <div id="board" class="sudoku-board"></div>
+
+        <!-- Keypad for selecting values-->
+        <div id="keypad" class="keypad"></div>
+
+        <!-- Status message-->
+        <div id="status-msg" class="status-msg">Select a cell to begin!</div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

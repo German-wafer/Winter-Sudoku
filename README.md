@@ -17,9 +17,9 @@
 
 ## Built with
 
-* **HTML5** – Game layout & DOM elements
-* **CSS3** – Card-based grid system & error animations
-* **JavaScript** – Matrix state management, validation logic & timer
+* **HTML5**: Game layout & DOM elements
+* **CSS3**: Card-based grid system & error animations
+* **JavaScript**: Matrix state management, validation logic & timer
 
 ## What I Learned
 

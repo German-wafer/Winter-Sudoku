@@ -20,3 +20,12 @@
 * **HTML5** – Game layout & DOM elements
 * **CSS3** – Card-based grid system & error animations
 * **JavaScript** – Matrix state management, validation logic & timer
+
+## What I Learned
+
+* Keeping the game logic as plain numbers while switching display themes on top.
+* Grid Index Math: Using array math (i % 4 and Math.floor(i / 4)) to calculate rows, columns, and sub-grids.
+* Mapping individual cell indices to check for duplicates in each 2×2 box.
+* Keeping track of original clues versus player inputs across board resets.
+
+
